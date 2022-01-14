@@ -1,0 +1,36 @@
+.about{
+    @include flex-col;
+    position: relative;
+    text-align: start;
+    &__title{
+        font-size: $title-fs;
+        font-weight: $title-fw;
+        align-self: flex-start;
+    }
+    &__content{
+        overflow: hidden;
+        @include laptop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__wrapper{
+        @include laptop{
+            width: 45%;
+        }
+    }
+    &__text{
+        font-size: $text-fs;
+        line-height: 1.8rem;
+    }
+    &__img{
+        width: 100%;
+        @include laptop{
+            width: 45%;
+        }
+        @include desktop{
+            width: 40%;
+        }
+    }
+}

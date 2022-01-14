@@ -1,0 +1,11 @@
+mixin card(image,text)
+    .card 
+        img(src=`./assets/img/${image}`, alt="" class="card__img") 
+        p.card__text= text 
+
+mixin testimonial-card(image,text,label)
+    .testimonial-card 
+        .imgbx
+            img(class="testimonial-card__img" src=`./assets/img/${image}`, alt="")
+        p.testimonial-card__content= text
+        span.testimonial-card__label= label

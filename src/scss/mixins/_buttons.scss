@@ -1,0 +1,20 @@
+@mixin btn {
+    text-decoration: none;
+    color: $white;
+    padding: $btn-pd;
+    background-color: $primary;
+    text-transform: uppercase;
+    font-size: $btn-fs;
+    letter-spacing: 2px;
+    font-weight: $btn-fw;
+    border: none;
+    border-radius: .5em;
+    margin: 2rem 0;
+    transition: letter-spacing .5s ease-in-out,background-color .8s ease-in-out;
+    &:hover{
+        letter-spacing: 5px;
+        background-color: $white;
+        border: 1px solid $primary;
+        color: $primary;
+    }
+}

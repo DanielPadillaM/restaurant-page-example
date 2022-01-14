@@ -1,0 +1,12 @@
+mixin nav
+    nav.nav
+        a(class="nav__logo" href="#") Food
+            span.text--pink .
+        ul.main-menu 
+            each page, index in pages
+                li.main-menu__item
+                    if index ==0
+                        a(class="main-menu__link active" data-text=page href=`#${page}`)= page
+                    else 
+                        a(class="main-menu__link" data-text=page href=`#${page}`)= page
+        .toggle 

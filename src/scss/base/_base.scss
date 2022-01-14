@@ -1,0 +1,37 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.page-section{
+    background-color: $white;
+}
+
+.from-left,.from-right{
+    opacity: 0;
+    transition: transform .5s ease-in, opacity .4s ease-in;
+}
+.from-left{
+    transform: translateX(-50%);
+}
+
+.from-right{
+    transform: translateX(50%);
+}
+
+.from-left.appear,
+.from-right.appear{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}

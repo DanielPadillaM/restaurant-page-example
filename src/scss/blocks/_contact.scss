@@ -1,0 +1,14 @@
+.contact{
+    @include flex-col;
+    background-image: $bgContact;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__title{
+        font-size: $title-fs;
+        font-weight: $title-fw;
+    }
+    &__text{
+        font-size: $text-fs;
+    }
+}
+

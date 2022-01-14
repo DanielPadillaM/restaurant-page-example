@@ -1,0 +1,8 @@
+h2.menu__title.fade-in Our 
+    span.text--pink M
+    |enu 
+p.menu__text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos velit animi consequuntur iste adipisci necessitatibus.
+.menu__content
+    each item in menu
+        +card(item.image,item.text)
+a(href="#" class="menu__btn") view all

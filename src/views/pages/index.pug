@@ -1,0 +1,18 @@
+extends ../templates/template
+block header 
+    +nav
+block main 
+    section.page-section.home#home
+        include ../include/home.pug
+    section.page-section.about#about
+        include ../include/about.pug
+    section.page-section.menu#menu
+        include ../include/menu.pug
+    section.page-section.expert#expert
+        include ../include/expert.pug
+    section.page-section.testimonial#testimonials
+        include ../include/testimonial.pug
+    section.page-section.contact#contact
+        include ../include/contact.pug
+
+
